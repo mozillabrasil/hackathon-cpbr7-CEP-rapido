@@ -79,12 +79,35 @@ function correiocontrolcep(valor){
 /* API Google Maps */
 // inicializa jquery
  $(function(){
-	// inicializa plugin gmap3	     
+
+ 	var rua1;
+ 	var bairro1;
+ 	var localidade1;
+ 	var uf1;
+ 	var end_total;
+
+ 	$('#google-maps').click(function(){
+
+ 		rua1 		= $('#logradouro').val();
+		bairro1 	= $('#bairro').val();
+		localidade1 = $('#localidade').val();
+		uf1 		= $('#uf').val();
+
+		end_total = ""+rua1+", "+bairro1+", "+localidade1+", "+uf1+"";
+
+		alert(end_total);
+		
+
+ 	});
+
+ 	end_total = ""+rua1+", "+bairro1+", "+localidade1+", "+uf1+"";
+
 	$("#mapa").gmap3({
+
 	    map:
 		{
 	      // local padrão onde o mapa irá aparecer quando carregado
-		  address:"Mato Grosso do Sul, Brasil",
+		  address: end_total,
 	      options:
 		  {
 			// zoom inicial (aproximação)  
