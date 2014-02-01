@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset='UTF-8'>
+		<title>App</title>
+
+		<link href='css/normalize.css' rel='stylesheet' type='text/css'>
+		<link href='css/estilo.css' rel='stylesheet' type='text/css'>
+
+		<script src='js/jquery-1.11.0.min.js'> </script>
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<script type="text/javascript" src="js/gmap3.js"></script>
+		<script src='js/javascript.js'> </script>
+
+		<script type="text/javascript">
+		// inicializa jquery
+		 $(function(){
+			
+			// inicializa plugin gmap3	     
+			$("#mapa").gmap3({
+
+		  	}); 
+		});     
+		</script>
+
+	</head>
+
+	<body onload="initialize()">
+
+		<header id='header'>
+
+			<img width='320' src='img/correio_03.jpg' alt='logo correio'>
+
+		</header>
+
+		<section id='tela'>
+
+	  		<section id='txt-dados-cep'>
+
+	  			<p class='dados-cep'>Digite o seu CEP:</p>
+
+	  		</section>
+
+			<p class='dados-cep'> <input id="cep" MAXLENGTH='9' size='9'></p>
+
+			<section id='resposta-cep'>
+
+				<label class='txt-reposta'>Estado</label><br>
+				<input id="uf"><br>
+
+				<label class='txt-reposta'>Cidade</label><br>
+				<input id="localidade"><br>
+
+				<label class='txt-reposta'>Bairro</label><br> 
+				<input id="bairro"><br>
+
+				<label class='txt-reposta'>Rua</label><br>
+				<input id="logradouro"><br>
+
+			</section>
+
+			<section id='mapa-google'>
+
+				<section id='mapa'>
+
+				</section>
+
+			</section>
+
+			<section id='btn-buscar'>Buscar</section>
+
+		</section>
+
+		<footer id='footer'>
+
+			<ul>
+
+				<li id='google-maps' class='menu-footer'>
+
+					Google Maps
+
+				</li>
+
+				<li id='nova-busca' class='menu-footer'>
+
+					Nova Busca
+
+				</li>
+
+			</ul>
+
+		</footer>
+
+	</body>
+
+</html>

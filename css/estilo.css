@@ -1,0 +1,100 @@
+.clearBoth{
+	clear: both;
+}
+#header{
+	background: #004182;
+	height: 91px;
+	width: 100%;
+}
+.dados-cep{
+	color: #004182;
+	font-size: 14pt;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+#txt-dados-cep{
+
+}
+#tela{
+	background: #FEDD00;
+	height: 300px;
+}
+#resposta-cep{
+	display: none;
+    margin: 20px auto 0;
+    width: 177px;
+}
+#footer{
+	height: 65px;
+	background: #004182;
+}
+#btn-buscar{
+	background: none repeat scroll 0 0 #004182;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 50px auto 0;
+    padding: 10px;
+    width: 56px;
+}
+.menu-footer{
+	background: none repeat scroll 0 0 #004182;
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    list-style: none outside none;
+    margin: 20px 0 0 35px;
+    padding: 3px;
+    cursor: pointer;
+    display: none;
+}
+.txt-reposta{
+	color: #004182;
+	font-weight: bold;
+}	
+#mapa-como-chegar{
+	border: 2px solid #FFFFFF;
+    display: none;
+    height: 295px;
+    margin: 0 auto;
+    width: 315px;
+}
+#mapa-google{
+	border: 2px solid #FFFFFF;
+    display: none;
+    height: 295px;
+    margin: 0 auto;
+    width: 315px;
+}
+#mapview{
+	display: none;
+}
+#map_canvas{
+	background-color: #E5E3DF;
+    float: left;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    width: 353px;
+}
+.gm-style{
+	height: 100% !important;
+    left: 0 !important; 
+    overflow: hidden !important;
+    position: absolute !important; 
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 0 !important;
+}
+.gmap3 {
+    border: 1px dashed #C0C0C0;
+    height: 500px;
+    margin: 20px auto;
+    width: 700px;
+}
+#mapa{
+    height: 295px;
+    width: 315px;
+}

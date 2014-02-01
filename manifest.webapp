@@ -1,0 +1,25 @@
+{
+	"name": "AppLucas correios",
+	"version": "1.0",
+	"description": "primeiro app para mozilla OS",
+	"launch_path": "/index.html",
+	"permissions": {
+
+		"storage":{
+
+			"description": "required."
+
+		}
+
+	},
+	"developer": {
+		"name": "Lucas de Oliveira",
+		"url": "http://lucasprograma.com.br"
+	},
+	"icons": {
+		
+		"60": "/img/icone_60.png",
+		"128": "/img/icone_128.png"
+	}
+
+}
